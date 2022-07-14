@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="Content-Language" content="zh-CN">
+<meta name="author" content="管雷鸣">
+<title>DEMO</title>
+<script src="./msg.js"></script>
+<script src="./kefu.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/style.css" media="screen">
+</head>
+<body>
+<script type="text/javascript">
+//设置您的雷鸣云客服系统部署的域名
+kefu.api.domain = 'https://api.kefu.leimingyun.com';	
+//设置您的雷鸣云客服系统部署的socket聊天的wss或者ws的地址
+kefu.socket.url = 'wss://api.kefu.leimingyun.com/websocket';  
+
+//kefu.js 初始化
+kefu.init();
+
+//填写上你的坐席id即可（在客服管理后台获得）。打开聊天窗口，其实就是这一句。
+kefu.ui.chat.entry("365fef747a9e493fb631b621ee36eed1");
+</script>
+
+</body>
+</html>
